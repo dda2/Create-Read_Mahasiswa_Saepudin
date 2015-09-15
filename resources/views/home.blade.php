@@ -1,6 +1,8 @@
 @extends('templates.default')
 
 @section('content')
-    <h3>Home</h3>
-    <p>Website Latihan Laravel</p>
+    <div class="jumbotron">
+        <h1>Home</h1>
+        <p>Website Latihan Laravel</p>
+    </div>
 @stop

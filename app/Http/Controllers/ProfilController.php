@@ -12,11 +12,8 @@ class ProfilController extends Controller
     public function getProfil()
     {
         $photo = Auth::user()->getPhoto();
-        $contents = Storage::get($photo);
 
-        $pp = storage_path('app/'. $photo);
-
-        return view('profil.profile',['pp' => $pp]);
+        return view('profil.profile',['pp' => $photo]);
     }
 
     public function postAddImage(Request $request)

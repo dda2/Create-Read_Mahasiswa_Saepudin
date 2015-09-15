@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-6">
 
-            <img src="{{ $pp }}" alt="">
+            <img src="uploads/{{ $pp }}" alt="">
             <form action="{{ route('profil.image.post') }}" class="form-horizontal" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="" class="control-label">Image</label>

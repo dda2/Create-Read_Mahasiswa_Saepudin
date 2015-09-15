@@ -38,7 +38,7 @@ class Authenticate
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
             } else {
-                return redirect()->guest('auth.masuk');
+                return redirect()->route('signin')->with('info', 'Silahkan login dulu');
             }
         }
 

@@ -45,7 +45,7 @@ Route::post('/masuk', [
 ]);
 
 // Auth
- 
+
 Route::get('/daftar', [
     'uses'  => '\App\Http\Controllers\AuthController@getSignup',
     'as'    => 'signup',
@@ -65,6 +65,7 @@ Route::get('/keluar', [
 Route::get('/profil', [
     'uses'  => '\App\Http\Controllers\ProfilController@getProfil',
     'as'    => 'profil.image',
+    'middleware' => ['auth']
 ]);
 
 Route::post('/profil', [

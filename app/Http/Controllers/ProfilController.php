@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Cpntrollers;
+namespace App\Http\Controllers;
 
 use Storage;
 use Illuminate\Http\Request;
@@ -10,7 +10,7 @@ class ProfilController extends Controller
 {
     public function getProfil()
     {
-        return view('profil.index');
+        return view('profil.profile');
     }
 
     public function postAddImage(Request $request)

@@ -38,6 +38,16 @@ class User extends Model implements AuthenticatableContract
         return null;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
     public function getNameOrUsername()
     {
         return $this->getName() ?: $this->name;

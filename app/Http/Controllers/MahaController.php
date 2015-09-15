@@ -40,4 +40,3 @@ class MahaController extends Controller
             ->with('info', ' Mahasiswa Berhasil Ditambahkan');
     }
 }
-?>

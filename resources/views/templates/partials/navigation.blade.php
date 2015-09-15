@@ -9,7 +9,7 @@
                 <li><a href="{{ route('mahas') }}">Data Mahasiswa</a></li>
                 @endif
             </ul>
-                
+
             <ul class="nav navbar-nav navbar-right">
                 @if(Auth::check())
                 <li><a href="">{{Auth::user()->getNameOrUsername() }}</a></li>
